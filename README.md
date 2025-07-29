@@ -20,7 +20,7 @@ by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
 
 Instance files follow the naming pattern:
 ```
-bpps_c{capacity}n{items}m{classes}v{min}_{max}s{min}_{max}f{flag}_seed{value}.txt
+bpps_d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}.txt
 ```
 
 Where:
