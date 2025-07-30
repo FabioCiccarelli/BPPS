@@ -28,7 +28,7 @@ Where:
 - `capacity`: Bin capacity value
 - `items`: Number of items
 - `classes`: Number of item classes
-- `v{min}_{max}`: Weight range for items [min, max]
+- `w{min}_{max}`: Weight range for items [min, max]
 - `s{min}_{max}`: Setup weight range [min, max]
 - `f{flag}`: Setup costs (0 = no setup costs, 1 = with setup costs)
 - `seed{value}`: Random seed used for instance generation (0 or 1)
