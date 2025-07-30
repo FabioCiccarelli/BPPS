@@ -13,6 +13,7 @@ by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
 
 - `instances/`: Directory containing all BPPS instance files
 - `instance_info.xlsx`: Spreadsheet with overview of all instances
+- `instance_status.xlsx`: Spreadsheet with best known values and optimality status for each instance
 - `instance_list.txt`: Text file listing all instance names
 - `toy_example.txt`: Small example instance for testing
 
