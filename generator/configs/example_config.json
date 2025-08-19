@@ -1,0 +1,19 @@
+{
+  "capacities": [200, 1000, 10000],
+  "num_items": [75, 100],
+  "num_classes": [5, 10, 15],
+  "item_weight_ranges": [
+    [0.05, 0.15],
+    [0.15, 0.30],
+    [0.30, 0.45]
+  ],
+  "setup_weight_ranges": [
+    [0.01, 0.10],
+    [0.10, 0.20],
+    [0.20, 0.30]
+  ],
+  "setup_cost_flags": [0, 1],
+  "seeds": [0, 1, 2],
+  "min_items_per_class": 2,
+  "output_directory": "./generated_instances"
+}

@@ -32,6 +32,13 @@ In the referenced paper, we:
 - [`instances/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instances): Directory containing all BPPS instance files
 - [`instance_info.xlsx`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instance_info.xlsx): Spreadsheet with overview of all instances, their best known values and the optimality status for each instance
 - [`toy_example.txt`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/toy_example.txt): Small example instance for testing
+- [`generator/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator): Complete instance generation toolkit
+  - [`bpps_instance_generator.py`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/bpps_instance_generator.py): Professional Python script for generating new BPPS instances
+  - [`README.md`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/README.md): Detailed documentation for the instance generator
+  - [`example_usage.py`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/example_usage.py): Examples demonstrating different ways to use the generator
+  - [`configs/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs): Configuration files for instance generation
+    - [`default_config.json`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs/default_config.json): Default configuration matching original parameters
+    - [`example_config.json`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs/example_config.json): Sample configuration file for custom instance generation
 
 <br>
 
@@ -76,9 +83,38 @@ Each instance file contains:
 
 <br>
 
+## 🛠️ Instance Generator
+
+This repository includes a comprehensive instance generation toolkit in the [`generator/`](generator/) directory. The generator:
+
+- **Follows BPPS naming convention**: Uses the standard `d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}` format
+- **Fully configurable**: All parameters can be customized via JSON configuration files
+- **Command-line interface**: Easy-to-use CLI with various options
+- **Statistics tracking**: Provides detailed generation statistics
+
+### Quick Start
+
+```bash
+# Navigate to generator directory
+cd generator
+
+# Generate instances with default parameters
+python3 bpps_instance_generator.py
+
+# Generate with custom configuration
+python3 bpps_instance_generator.py --config configs/example_config.json
+
+# Save default configuration template
+python3 bpps_instance_generator.py --save-default-config my_config.json
+```
+
+For detailed usage instructions, see [`generator/README.md`](generator/README.md).
+
+<br>
+
 ## 📖 Citation
 
-If you use this dataset in academic work, please cite:
+If you use this dataset or the instance generator in academic work, please cite:
 
 ```bibtex
 @article{Baldacci2025BPPS,

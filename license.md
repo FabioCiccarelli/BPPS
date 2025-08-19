@@ -5,7 +5,7 @@ All rights reserved.
 
 ## License Terms
 
-Redistribution and use of this benchmark dataset, with or without modification, are permitted provided that the following conditions are met:
+Redistribution and use of this benchmark dataset or of the instance generator, with or without modification, are permitted provided that the following conditions are met:
 
 1. **Attribution**: Redistributions of the dataset must retain the above copyright notice, this list of conditions and the following disclaimer.
 
