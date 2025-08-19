@@ -1,7 +1,7 @@
 
 # BPPS Instances Repository
 
-This repository contains benchmark instances for the Bin Packing Problem with Setups (BPPS).
+This repository contains benchmark instances for the Bin Packing Problem with Setups (BPPS) and tools for generating new instances.
 
 The instance set is associated with the research paper:
 
@@ -30,88 +30,19 @@ In the referenced paper, we:
 
 ## 📁 Repository Structure
 
-- [`instances/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instances): Directory containing all BPPS instance files
-- [`instance_info.xlsx`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instance_info.xlsx): Spreadsheet with overview of all instances, their best known values and the optimality status for each instance
-- [`toy_example.txt`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/toy_example.txt): Small example instance for testing
-- [`generator/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator): Complete instance generation toolkit
-  - [`bpps_instance_generator.py`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/bpps_instance_generator.py): Professional Python script for generating new BPPS instances
-  - [`README.md`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/README.md): Detailed documentation for the instance generator
-  - [`example_usage.py`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/example_usage.py): Examples demonstrating different ways to use the generator
-  - [`configs/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs): Configuration files for instance generation
-    - [`default_config.json`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs/default_config.json): Default configuration matching original parameters
-    - [`example_config.json`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/generator/configs/example_config.json): Sample configuration file for custom instance generation
+- **[`data/`](data/)**: Instance data and documentation
+  - [`data/instances/`](data/instances/): Directory containing all BPPS instance files (480 benchmark instances)
+  - [`data/instance_info.xlsx`](data/instance_info.xlsx): Spreadsheet with overview of all instances, their best known values and optimality status
+  - [`data/toy_example.txt`](data/toy_example.txt): Small example instance for testing
+  
+- **[`generator/`](generator/)**: Instance generation toolkit
+  - [`generator/bpps_instance_generator.py`](generator/bpps_instance_generator.py): Professional Python script for generating new BPPS instances
+  - [`generator/example_usage.py`](generator/example_usage.py): Examples demonstrating different ways to use the generator
+  - [`generator/configs/`](generator/configs/): Example configuration files for instance generation
+    
 
 <br>
 
-## 🏷️ Instance Naming Convention
-
-Instance files follow the naming pattern:
-```
-bpps_d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}.txt
-```
-
-Where:
-- `capacity`: Bin capacity value
-- `items`: Number of items
-- `classes`: Number of item classes
-- `w{min}_{max}`: Weight range for items [min, max]
-- `s{min}_{max}`: Setup weight range [min, max]
-- `f{flag}`: Setup costs (0 = no setup costs, 1 = with setup costs)
-- `seed{value}`: Random seed used for instance generation (0 or 1)
-
-<br>
-
-## 📄 Instance File Format
-
-Each instance file contains:
-
-1. **Header line**: `{no. of items} {no. of classes} {bin capacity} {bin cost}`
-2. **Class definitions** (one per class): `{setup cost} {setup weight} {item count}`
-    - Setup costs are represented as negative values
-3. **Item weights** (one per line): Items are ordered by class (all class 1 items, then class 2, etc.)
-
-### Example Structure
-```
-75	10	200	10
--4	3	5
--4	2	11
-...
-27
-12
-29
-...
-```
-
-<br>
-
-## 🛠️ Instance Generator
-
-This repository includes a comprehensive instance generation toolkit in the [`generator/`](generator/) directory. The generator:
-
-- **Follows BPPS naming convention**: Uses the standard `d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}` format
-- **Fully configurable**: All parameters can be customized via JSON configuration files
-- **Command-line interface**: Easy-to-use CLI with various options
-- **Statistics tracking**: Provides detailed generation statistics
-
-### Quick Start
-
-```bash
-# Navigate to generator directory
-cd generator
-
-# Generate instances with default parameters
-python3 bpps_instance_generator.py
-
-# Generate with custom configuration
-python3 bpps_instance_generator.py --config configs/example_config.json
-
-# Save default configuration template
-python3 bpps_instance_generator.py --save-default-config my_config.json
-```
-
-For detailed usage instructions, see [`generator/README.md`](generator/README.md).
-
-<br>
 
 ## 📖 Citation
 

@@ -5,7 +5,7 @@ Python script for generating Bin Packing Problem with Setups (BPPS) benchmark in
 ## 🚀 Features
 
 - **Configurable Parameters**: All generation parameters can be customized via JSON configuration files
-- **Naming Convention Compliance**: Follows the BPPS naming convention described in the main README
+- **Naming Convention Compliance**: Follows the BPPS naming convention described in [`../data/README.md`](../data/README.md)
 - **Command-Line Interface**: Easy-to-use CLI with various options
 - **Statistics Tracking**: Generates detailed statistics about the instance generation process
 
@@ -95,10 +95,12 @@ Options:
 
 ### 📄 Instance Files
 
-Files follow the naming convention:
+Files follow the naming convention described in [`../data/README.md`](../data/README.md):
 ```
 bpps_d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}.txt
 ```
+
+For detailed information about the file format and naming convention, see the [data documentation](../data/README.md).
 
 ### 📊 Statistics File
 
@@ -160,5 +162,5 @@ generator.generate_instances()
 - The generator ensures all classes have at least `min_items_per_class` items
 - Failed generations are logged and statistics are provided
 - Output directory is created automatically if it doesn't exist
-- Instance files use tab-separated format as specified in the BPPS format
+- Instance files use the BPPS format as specified in [`../data/README.md`](../data/README.md)
 
