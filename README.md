@@ -25,12 +25,15 @@ In the referenced paper, we:
 - Derive theoretical upper bounds on the number of bins required, enabling significant problem size reduction;
 - Establish a comprehensive benchmark of 480 instances and demonstrate substantial computational improvements through the integration of MCI and bin-number bounds.
 
+<br>
 
 ## 📁 Repository Structure
 
 - [`instances/`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instances): Directory containing all BPPS instance files
-- `instance_info.xlsx`: Spreadsheet with overview of all instances, their best known values and the optimality status for each instance
-- `toy_example.txt`: Small example instance for testing
+- [`instance_info.xlsx`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/instance_info.xlsx): Spreadsheet with overview of all instances, their best known values and the optimality status for each instance
+- [`toy_example.txt`](https://github.com/FabioCiccarelli/BPPS_instances/tree/main/toy_example.txt): Small example instance for testing
+
+<br>
 
 ## 🏷️ Instance Naming Convention
 
@@ -47,6 +50,8 @@ Where:
 - `s{min}_{max}`: Setup weight range [min, max]
 - `f{flag}`: Setup costs (0 = no setup costs, 1 = with setup costs)
 - `seed{value}`: Random seed used for instance generation (0 or 1)
+
+<br>
 
 ## 📄 Instance File Format
 
@@ -69,6 +74,7 @@ Each instance file contains:
 ...
 ```
 
+<br>
 
 ## 📖 Citation
 
@@ -81,4 +87,5 @@ If you use this dataset in academic work, please cite:
     year={2025}
 }
 ```
+
 
