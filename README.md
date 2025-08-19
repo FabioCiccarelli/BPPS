@@ -8,6 +8,7 @@ The instance set is associated with the research paper:
 **"The Bin Packing Problem with Setups: Formulations, Structural Properties, and Computational Insights"**  
 by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
 
+<br>
 
 ## 🎯 Problem Overview
 
