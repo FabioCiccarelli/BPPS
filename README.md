@@ -36,7 +36,7 @@ In the referenced paper, we:
   - [`data/toy_example.txt`](data/toy_example.txt): Small example instance for testing
   
 - **[`generator/`](generator/)**: Instance generation toolkit
-  - [`generator/bpps_instance_generator.py`](generator/bpps_instance_generator.py): Professional Python script for generating new BPPS instances
+  - [`generator/bpps_instance_generator.py`](generator/bpps_instance_generator.py): Python script for generating new BPPS instances
   - [`generator/example_usage.py`](generator/example_usage.py): Examples demonstrating different ways to use the generator
   - [`generator/configs/`](generator/configs/): Example configuration files for instance generation
     
