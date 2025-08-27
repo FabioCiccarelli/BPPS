@@ -1,9 +1,9 @@
 
-# BPPS Instances Repository
+# BPPS Repository
 
 This repository contains benchmark instances for the Bin Packing Problem with Setups (BPPS) and tools for generating new instances.
 
-The instance set is associated with the research paper:
+The repository is associated with the research paper:
 
 **"The Bin Packing Problem with Setups: Formulations, Structural Properties, and Computational Insights"**  
 by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
