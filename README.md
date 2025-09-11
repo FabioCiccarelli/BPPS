@@ -1,18 +1,18 @@
 
 # BPPS Repository
 
-This repository contains benchmark instances for the Bin Packing Problem with Setups (BPPS) and tools for generating new instances.
-
-The repository is associated with the research paper:
+This repository is associated with the research paper:
 
 **"The Bin Packing Problem with Setups: Formulations, Structural Properties, and Computational Insights"**  
 by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
+
+It contains the entire set of 480 benchmark instances for the Bin Packing Problem with Setups (BPPS), the instance generator, and an extended version of the computational results reported in the paper.
 
 <br>
 
 ## 🎯 Problem Overview
 
-The Bin Packing Problem with Setups (BPPS) is a generalization of the classical Bin Packing Problem where items are partitioned into classes. When at least one item from a given class is packed into a bin, both a setup weight (reducing available capacity) and a setup cost are incurred. The objective is to determine a minimum-cost partition of items into bins such that:
+The BPPS is a generalization of the classical Bin Packing Problem where items are partitioned into classes. When at least one item from a given class is packed into a bin, both a setup weight (reducing available capacity) and a setup cost are incurred. The objective is to determine a minimum-cost partition of items into bins such that:
 
 - The total weight of items plus setup weights of active classes does not exceed bin capacity in any bin;
 - The total cost — including bin costs and class-specific setup costs — is minimized.
@@ -32,8 +32,8 @@ In the referenced paper, we:
 
 - **[`data/`](data/)**: Instance data and documentation
   - [`data/instances/`](data/instances/): Directory containing all BPPS instance files (480 benchmark instances)
-  - [`data/instance_info.xlsx`](data/instance_info.xlsx): Spreadsheet with overview of all instances, their best known values and optimality status
-  - [`data/toy_example.txt`](data/toy_example.txt): Small example instance for testing
+  - [`data/computational_results.xlsx`](data/computational_results.xlsx): Extended computational results reported in the paper (detailed per-instance results)
+  - Two small example instances, referring to Figure 1 of the paper.
   
 - **[`generator/`](generator/)**: Instance generation toolkit
   - [`generator/bpps_instance_generator.py`](generator/bpps_instance_generator.py): Python script for generating new BPPS instances

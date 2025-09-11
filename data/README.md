@@ -5,11 +5,12 @@ This directory contains all the benchmark instances for the Bin Packing Problem 
 ## 📁 Directory Contents
 
 - **`instances/`**: All BPPS instance files (480 benchmark instances)
-- **`instance_info.xlsx`**: Comprehensive spreadsheet with:
-  - Overview of all instances
-  - Best known values for each instance
-  - Optimality status information
-- **`toy_example.txt`**: Small example instance for testing and understanding the file format
+- **`computational_results.xlsx`**: Comprehensive computational results spreadsheet with three worksheets:
+  - **formulation_performance**: Performance metrics for each of the 4 mathematical formulations (incumbent values, computation times, solver status)
+  - **solution_features**: Detailed analysis of optimal solutions including bin utilization statistics, items and classes distribution per bin
+  - **LP_relaxations**: LP relaxation optimal values and integrality gaps for each formulation (when optimal solutions are certified)
+- **`example_1a.txt`**: Example instance corresponding to the illustrative instance shown in Figure 1a of the paper
+- **`example_1b.txt`**: Example instance corresponding to the illustrative instance shown in Figure 1b of the paper
 
 <br>
 
@@ -34,8 +35,8 @@ bpps_d{capacity}n{items}m{classes}w{min}_{max}s{min}_{max}f{flag}_seed{value}.tx
 ### Example:
 `bpps_d10000n100m10w1500_3000s100_1000f0_seed0.txt`
 - Bin capacity: 10000
-- Items: 100
-- Classes: 10
+- No. items: 100
+- NO. classes: 10
 - Item weights: 15-30% of capacity (1500-3000)
 - Setup weights: 1-10% of capacity (100-1000)
 - No setup costs (f0)
