@@ -4,7 +4,7 @@
 <br>
 
 <p align="center">
-  <img src="BPPS_logo.png" alt="BPPS logo" width="650"/>
+  <img src="BPPS_logo.png" alt="BPPS logo" width="600"/>
 </p>
 
 <br>
