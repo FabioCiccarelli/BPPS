@@ -1,10 +1,13 @@
 
 # BPPS Repository
 
+<br>
+
 <p align="center">
-  <img src="BPPS_logo.png" alt="BPPS logo" width="300"/>
+  <img src="BPPS_logo.png" alt="BPPS logo" width="650"/>
 </p>
 
+<br>
 
 
 This repository is associated with the research paper:
