@@ -13,8 +13,8 @@ Redistribution and use of this benchmark dataset or of the instance generator, w
 
 3. **Citation Requirement**: All publications, research papers, or academic works that use this dataset must cite the following paper:
    
-   **"The Bin Packing Problem with Setups: Formulation, Structural Properties and Computational Insights"**  
-   by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
+   > **"The Bin Packing Problem with Setups: Formulation, Structural Properties and Computational Insights"**  
+   > by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
 
 4. **Non-endorsement**: The names of the contributors may not be used to endorse or promote products or research derived from this dataset without specific prior written permission.
 
