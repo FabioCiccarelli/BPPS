@@ -13,8 +13,7 @@
 This repository is associated with the research paper:
 
 **"The Bin Packing Problem with Setups: Formulation, Structural Properties and Computational Insights"**  
-by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.
-
+by R. Baldacci, F. Ciccarelli, S. Coniglio, V. Dose and F. Furini.   
 ([arXiv preprint](https://arxiv.org/abs/2509.10075))
 
 It contains the entire set of 480 benchmark instances for the Bin Packing Problem with Setups (BPPS), the instance generator, and an extended version of the computational results reported in the paper.
