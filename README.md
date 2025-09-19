@@ -33,7 +33,7 @@ This problem naturally arises in production planning and logistics applications 
 In the referenced paper, we:
 
 - Introduce a novel Integer Linear Programming formulation for this problem and analyze its LP relaxation properties;
-- Propose a family of valid inequalities and a valid cut that strengthen the LP relaxation and improve the optimal worst-case performance;
+- Propose valid inequalities that strengthen the LP relaxation and improve the optimal worst-case performance;
 - Derive theoretical upper bounds on the number of bins required, enabling significant problem size reduction;
 - Establish a comprehensive benchmark of 480 instances and demonstrate substantial computational improvements through the integration of MCI and bin-number bounds.
 
